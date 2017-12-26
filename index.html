@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title>西太华</title>
+</head>
+
+<link rel="stylesheet" href="css/animations.css" />
+<style>
+ 	.music{width:50px;height:47px;position:absolute;bottom:10px;right:0px;}
+	
+	*{margin: 0;padding: 0;}
+	html,body{width:100%;height:100%;}
+	.page{width: 100%;height: 100%;position: absolute;}
+	.hide{display: none;}
+	.page{position: relative;}
+    .page img{position: absolute;top:0;left:0;}
+	.page .iconUp{position: absolute;top:85%;left:50%;width:40px;margin-left:-20px}
+	.page-1-1{width: 100%;height: 100%;background:url(images/hong.jpg) no-repeat;background-size: cover;position: absolute;}
+	.page-1-1 .img1{top:20%;left:35%;display:block;width:30%;animation: run1 1.8s ;opacity: 0;}
+	.page-1-1 .img2{top:40%;left:35%;display:block;width:30%;animation: run2 1.2s ; animation-delay:0.6s;opacity: 0;}
+	.page-1-1 .img3{top:60%;left:35%;display:block;width:30%;animation: run3 0.6s ; animation-delay:1.2s;opacity: 0;}
+	.page-1-1 .img4{top:30%;left:10%;display:block;width:80%;animation: run4 1.2s ; animation-delay:1.8s;opacity: 0;}
+	.page-1-1 .img5{top:50%;left:10%;display:block;width:80%;animation: run4 0.6s ; animation-delay:2.4s;opacity: 0;}
+	.page-1-1 .img6{top:30%;left:15%;display:block;width:70%;animation: run5 1.2s ; animation-delay:3s;opacity: 0;}
+	.page-1-1 .img7{top:50%;left:15%;display:block;width:70%;animation: run5 0.6s ; animation-delay:3.6s;opacity: 0;}
+	.page-1-1 .img8{top:40%;right:90%;display:block;width:80%;animation: run6 0.6s ; animation-delay:4.2s;opacity: 0;}
+	.page-1-1 .img9{top:40%;left:10%;display:block;width:80%;animation: run7 0.6s ; animation-delay:4.8s;opacity: 0;}
+	.page-1-1 .img10{top:40%;left:10%;display:block;width:80%;animation: run8 0.6s ; animation-delay:5.4s;opacity: 0;}
+	.page-1-1 .img11{top:40%;left:10%;display:block;width:80%;animation: run6 0.6s ; animation-delay:6s;opacity: 0;}
+	.page-1-1 .img12{top:30%;left:15%;display:block;width:70%;animation: run4 1.2s ; animation-delay:6.6s;opacity: 0;}
+    .page-1-1 .img13{top:50%;left:15%;display:block;width:70%;animation: run4 0.6s ; animation-delay:7.2s;opacity: 0;}
+	.page-1-1 .img14{top:30%;left:15%;display:block;width:70%;animation: run8 1.2s ; animation-delay:7.8s;opacity: 0;}
+	.page-1-1 .img15{top:50%;left:15%;display:block;width:70%;animation: run8 0.6s ; animation-delay:8.4s;opacity: 0;}
+	.page-1-1 .img16{top:30%;left:15%;display:block;width:70%;animation: run7 0.6s ; animation-delay:9s;opacity: 0;}
+	.page-1-1 .img17{top:30%;left:15%;display:block;width:70%;animation: run6 1.2s ; animation-delay:9.6s;opacity: 0;}
+	.page-1-1 .img18{top:50%;left:15%;display:block;width:70%;animation: run6 0.6s ; animation-delay:10.2s;opacity: 0;}
+	.page-1-1 .img19{top:30%;left:15%;display:block;width:70%;animation: run4 0.6s ; animation-delay:10.8s;opacity: 0;}
+	.page-1-1 .img20{top:30%;left:15%;display:block;width:70%;animation: run7 1.2s ; animation-delay:11.4s;opacity: 0;}
+	.page-1-1 .img21{top:50%;left:15%;display:block;width:70%;animation: run7 0.6s ; animation-delay:12s;opacity: 0;}
+    .page-1-1 .img22{top:30%;left:15%;display:block;width:70%;animation: run8 1.2s ; animation-delay:12.6s;opacity: 0;}
+	.page-1-1 .img23{top:50%;left:15%;display:block;width:70%;animation: run8 0.6s ; animation-delay:13.2s;opacity: 0;}
+	.page-1-1 .img24{top:40%;left:10%;display:block;width:80%;animation: run4 0.6s ; animation-delay:13.8s;opacity: 0;}
+	.page-1-1 .img25{top:40%;left:10%;display:block;width:80%;animation: run6 0.6s ; animation-delay:14.4s;opacity: 0;}
+	.page-1-1 .img26{top:30%;left:15%;display:block;width:70%;animation: run7 1.2s ; animation-delay:15s;opacity: 0;}
+	.page-1-1 .img27{top:50%;left:15%;display:block;width:70%;animation: run7 0.6s ; animation-delay:15.6s;opacity: 0;}
+	.page-1-1 .img28{top:40%;left:10%;display:block;width:80%;animation: run8 0.6s ; animation-delay:16.2s;opacity: 0;}
+	.page-1-1 .img29{top:40%;left:10%;display:block;width:80%;animation: run8 0.6s ; animation-delay:16.8s;opacity: 0;}
+	.page-1-1 .img30{top:40%;left:10%;display:block;width:80%;animation: run8 0.6s ; animation-delay:17.4s;opacity: 0;}
+	.page-1-1 .img31{top:30%;left:15%;display:block;width:70%;animation: run6 1.2s ; animation-delay:18s;opacity: 0;}
+	.page-1-1 .img32{top:50%;left:15%;display:block;width:70%;animation: run6 0.6s ; animation-delay:18.6s;opacity: 0;}
+	.page-1-1 .img33{top:40%;left:10%;display:block;width:80%;animation: run8 0.6s ; animation-delay:19.2s;opacity: 0;}
+	.page-1-1 .img34{top:35%;left:15%;display:block;width:70%;animation: run8 1.2s ; animation-delay:19.8s;opacity: 0;}
+	.page-1-1 .img35{top:50%;left:10%;display:block;width:80%;animation: run8 0.6s ; animation-delay:20.4s;opacity: 0;}
+	  @keyframes run1 {
+            0%{top:0;opacity: 1;}
+           	16%{top:21%;}
+       		33%{top:20%;opacity: 1;}
+			100%{top:20%;opacity: 1;}
+	   }
+	
+	@keyframes run2 {
+            0%{top:0;opacity: 1;}
+           	25%{top:41%;opacity: 1;}
+       		50%{top:40%;opacity: 1;}
+			100%{top:40%;opacity: 1;}
+	   }
+	 @keyframes run3{
+            0%{top:0;opacity: 1;}
+           	50%{top:61%;opacity: 1;}
+       		100%{top:60%;opacity: 1;;}
+	   }
+	   @keyframes run4{
+            0%{left:0;opacity: 1;}
+           	50%{left:12%;opacity: 1;}
+       		100%{left:10%;opacity: 1;;}
+	   }
+	  
+	    @keyframes run5{
+            0%{left:0;opacity: 1;transform:rotate(-180deg)}
+           	50%{left:15%;opacity: 1;transform:rotate(0deg)}
+       		100%{left:10%;opacity: 1;;}
+	   }  
+	     @keyframes run6{
+            0%{right:0%;opacity: 1;}
+           	50%{right:15%;opacity: 1;}
+       		100%{right:15%;opacity: 1;;}
+	   }  
+	    @keyframes run7{
+            0%{opacity: 0;transform:scale(1)}
+           	
+			50%{opacity: 1;transform:scale(1.2)}
+		
+       		100%{opacity: 0;transform:scale(1)}
+	   }  
+	    @keyframes run8{
+            0%{opacity: 0;}
+           	50%{opacity: 0.5;}
+       		100%{opacity: 1;;}
+	   }
+	  	.page-2-1{height:100%;background: url(images/bg1.png) no-repeat;background-size: cover;}
+       /* .page-2-1 .img1{width:20%;left:60%;top:15%;}
+        .page-2-1 .img2{height:30%;width:35%;left:60%;top:35%;}
+		.page-2-1 .img3{height:15%;width:30%;left:10%;top:55%;}
+		.page-2-1 .img4{height:15%;width:40%;left:10%;top:45%;}
+		*/
+		.page-3-1, .page-4-1 , .page-5-1, .page-6-1{height:100%;background:#a59591;}
+        .page-3-1 .img1{height:40%;width:80%;left:10%;top:7%;}
+        .page-3-1 .img2{height:40%;width:80%;left:10%;top:57%;}
+		
+		.page-4-1 .img1{height:25%;width:80%;left:10%;top:7%;}
+        .page-4-1 .img2{height:25%;width:80%;left:10%;top:37%;}
+		.page-4-1 .img3{height:25%;width:80%;left:10%;top:67%;}
+		
+		.page-5-1 .img1{height:25%;width:80%;left:10%;top:7%;}
+        .page-5-1 .img2{height:25%;width:80%;left:10%;top:37%;}
+		.page-5-1 .img3{height:25%;width:80%;left:10%;top:67%;}
+		
+		
+		.page-6-1 .img1{height:25%;width:80%;left:10%;top:7%;}
+        .page-6-1 .img2{height:25%;width:80%;left:10%;top:37%;}
+		.page-6-1 .img3{height:25%;width:80%;left:10%;top:67%;}
+</style>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/index.js"></script>
+<script>
+	
+</script>
+     
+
+<body>
+<div class="page page-1-1">
+	<div class="warp">
+    	<div class="music musicRun" id="music">
+        	<audio src='audio/Virtual Riot - Sugar Rush (Original Mix).mp3' autoplay="true" preload="auto">
+        </div>
+        	<img src="images/1_01.png" class="img1">
+            <img src="images/1_02.png" class="img2">
+            <img src="images/1_03.png" class="img3">
+            <img src="images/2_01.png" class="img4">
+            <img src="images/2_02.png" class="img5">
+            <img src="images/3_01.png" class="img6">
+            <img src="images/3_02.png" class="img7">
+            <img src="images/4.png" class="img8">
+            <img src="images/5.png" class="img9">
+            <img src="images/6.png" class="img10">
+            <img src="images/7.png" class="img11">
+            <img src="images/8_01.png" class="img12">
+       		<img src="images/8_02.png" class="img13">
+			<img src="images/9_01.png" class="img14">
+        	<img src="images/9_02.png" class="img15">
+            <img src="images/11.png" class="img16">
+            <img src="images/12_01.png" class="img17">
+            <img src="images/12_02.png" class="img18">
+            <img src="images/13.png" class="img19">
+            <img src="images/14_01.png" class="img20">
+            <img src="images/14_02.png" class="img21">
+            <img src="images/15_01.png" class="img22">
+            <img src="images/15_02.png" class="img23">
+            <img src="images/16.png" class="img24">
+            <img src="images/17.png" class="img25">
+            <img src="images/18_01.png" class="img26">
+            <img src="images/18_02.png" class="img27">
+            <img src="images/19.png" class="img28">
+            <img src="images/20.png" class="img29">
+            <img src="images/21.png" class="img30">
+            <img src="images/22_01.png" class="img31">
+            <img src="images/22_02.png" class="img32">
+            <img src="images/23.png" class="img33">
+            <img src="images/24_01.png" class="img34">
+            <img src="images/24_02.png" class="img35">
+            <img src="images/icon_up.png" class="iconUp pt-page-moveIconUp">
+	</div>
+			
+</div>
+<div class="page page-2-1 hide">
+    <div class="warp">
+       <!-- <img src="images/page1-main_03.png" class="img1  pt-page-ontop hide">
+        <img src="images/page1-main_07.png" class="img2  pt-page-moveFromRight hide">
+        <img src="images/page1-main_10.png" class="img3 pt-page-scaleUpDown hide">
+        <img src="images/page1-main_11_10.png" class="img4 pt-page-scaleUp hide pt-page-delay700">-->
+        <img src="images/icon_up.png" class="iconUp pt-page-moveIconUp hide">
+    </div>
+</div>
+
+<div class="page page-3-1 hide">
+    <div class="warp">
+        <img src="images/pag2-mian_03.png" class="img1  pt-page-moveFromRightt hide">
+        <img src="images/pag2-mian_06.png" class="img2 pt-page-scaleUp pt-page-delay500 hide">
+  		<img src="images/icon_up.png" class="iconUp pt-page-moveIconUp hide">
+    </div>
+</div>
+<div class="page page-4-1 hide">
+    <div class="warp">
+    	<img src="images/page-3-main_03.png" class="img1 pt-page-scaleUp hide">
+        <img src="images/page-3-main_06.png" class="img2 pt-page-moveFromRight pt-page-delay500 hide">
+       	<img src="images/page-3-main_08.png" class="img3 pt-page-scaleUpDown pt-page-delay1000 hide">
+        <img src="images/icon_up.png" class="iconUp pt-page-moveIconUp hide">
+    </div>
+</div>
+<div class="page page-5-1 hide">
+    <div class="warp">
+        <img src="images/page4-main_03.png" class="img1 pt-page-scaleUp hide">
+        <img src="images/page4-main_06.png" class="img2 pt-page-moveFromRight pt-page-delay500 hide">
+       	<img src="images/page4-main_08.png" class="img3 pt-page-scaleUpDown pt-page-delay1000 hide">
+        <img src="images/icon_up.png" class="iconUp pt-page-moveIconUp hide">
+    </div>
+</div>
+<div class="page page-6-1 hide">
+    <div class="warp">
+        <img src="images/page5-main_03.png" class="img1 pt-page-scaleUp hide">
+        <img src="images/page5-main_06.png" class="img2 pt-page-moveFromRight pt-page-delay500 hide">
+       	<img src="images/page5-main_08.png" class="img3 pt-page-scaleUpDown  pt-page-delay1000 hide">
+        <img src="images/icon_up.png" class="iconUp pt-page-moveIconUp hide">
+    </div>
+</div>
+</body>
+
+
+</html>
